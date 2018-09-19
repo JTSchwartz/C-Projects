@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Schwartz Theme -->
+    <link rel="stylesheet" type="text/css" href="https://jtschwartz.com/css/main.css"/>
+    <link rel="shortcut icon" type="image/png" href="https://jtschwartz.com/img/favico.png"/>
+
+    <!-- Internal JavaScript -->
+    <script src="https://jtschwartz.com/js/terminal.js" type="application/javascript"></script>
+
+    <title>Jacob Schwartz</title>
+</head>
+
+<body style="height: 100vh;">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="navbar-brand"><strong>Jacob Schwartz</strong></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jtschwartz.com">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://jtschwartz.com/resume/Resume.pdf">Re&sacute;ume</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCurrent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Current Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCurrent">
+                        <a class="dropdown-item" href="../SiteCrawler/">Site Crawler</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownPast" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Past Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPast">
+                        <a class="dropdown-item" href="../3x3-Puzzle-Solver/">3x3 Grid Puzzle Solver</a>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPast">
+                        <a class="dropdown-item active" href="#">C Programs</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="mailto:jacob@jtschwartz.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://www.linkedin.com/in/jacob-t-schwartz"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://github.com/JTSchwartz/"><i class="fab fa-github-square fa-2x"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<article>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <div class="container">
+                <br/>
+                <h2>C Programs</h2>
+                <p class="lead">
+                    This is a collection of simple programs written in C for a CPS 356 Operating Systems class.
+                </p>
+                <p>
+                    Current Programs:
+                </p>
+                <ul>
+                    <li>alternate.c</li>
+                    <ul>
+                        <li>This program will fork and synchronize 20 processes so that each process creates a child and they alternate between printing ping and pong.</li>
+                    </ul>
+                    <li>countsubsstdin.c</li>
+                    <ul>
+                        <li>CountSubStdIn will take 2 required inputs, a substring and a full string, as well as a required -nooverlap flag. The program will count the amount of times the substring is found in a string, and the flag will determine if overlap is allowed.</li>
+                    </ul>
+                    <li>removesubsargs.c</li>
+                    <ul>
+                        <li>An adaptation of CountSubsStdIn, this program takes the input as arguments, and returns the count of substrings in the string, as well as the given string with all found substrings removed.</li>
+                    </ul>
+                </ul>
+                <p class="float-left">
+                    Language: C
+                </p>
+                <p class="float-right">
+                    <a target="_blank" href="https://github.com/JTSchwartz/C-Projects">https://github.com/JTSchwartz/C-Projects</a>
+                </p>
+            </div>
+      </div>
+    </div>
+</article>
+
+<footer>
+    <div class="container-fluid bg-primary text-secondary text-right" style="padding: .3rem .5rem .05rem 0">
+        <h6 style="padding-bottom: 0">&reg; Jacob Schwartz</h6>
+    </div>
+</footer>
+</body>
+</html>
